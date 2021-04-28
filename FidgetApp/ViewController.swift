@@ -18,7 +18,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    func vibrate(for type: UINotificationFeedbackGenerator.FeedbackType) {
+        let notificationGenerator = UINotificationFeedbackGenerator()
+        notificationGenerator.prepare()
+        notificationGenerator.notificationOccurred(type)
+    }
     @IBAction func tapColor(_ sender: UITapGestureRecognizer) {
         if currentColor <= 8 {
             currentColor += 1
@@ -31,9 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buzzButton(_ sender: UIButton) {
-        
-        //currently trying to reaserch how to pull off what this is planned to be.
-        
+        vibrate(for: .success)
     }
 }
 
