@@ -30,7 +30,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-YX-8TB">
                                 <rect key="frame" x="113" y="150" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Buzz"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Buzz">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="buzzButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQ6-5g-Fat"/>
                                 </connections>
@@ -46,6 +49,14 @@
                                     <segue destination="2JS-A4-8cO" kind="show" id="lHk-tR-wrq"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yb4-HA-3II">
+                                <rect key="frame" x="20" y="88" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="colorModeSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="c98-NJ-bqe"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,6 +64,8 @@
                     <navigationItem key="navigationItem" id="PGR-l5-uhz"/>
                     <connections>
                         <outlet property="ColorShift" destination="nN9-zU-m1k" id="FDw-Fr-Zld"/>
+                        <outlet property="buzzyButton" destination="i7J-YX-8TB" id="xhl-sR-hQj"/>
+                        <outlet property="colorMode" destination="yb4-HA-3II" id="hoo-Kt-x1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -77,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBS-Ag-wvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795" y="106"/>
+            <point key="canvasLocation" x="1910" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yt6-DJ-d7j">

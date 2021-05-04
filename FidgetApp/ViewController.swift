@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   
+    @IBOutlet weak var buzzyButton: UIButton!
+    @IBOutlet weak var colorMode: UISwitch!
+    var darkMode = false
     @IBOutlet weak var ColorShift: UIView!
-    let colors: [UIColor] = [.black, .magenta, .red, .orange, .yellow, .green,.cyan, .blue, .purple,.brown]
+    var colors: [UIColor] = [.black, .magenta, .red, .orange, .yellow, .green,.cyan, .blue, .purple,.brown]
     var currentColor = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,33 @@ class ViewController: UIViewController {
     
     @IBAction func buzzButton(_ sender: UIButton) {
         vibrate(for: .success)
+    }
+    func colorSwitch() {
+        if darkMode == true {
+            view.backgroundColor = .black
+            buzzyButton.titleLabel?.textColor = .white
+            colorMode.tintColor = .white
+            colorMode.thumbTintColor = .black
+            colors[0] = .white
+            ColorShift.backgroundColor = colors[currentColor]
+        } else {
+            view.backgroundColor = .white
+            buzzyButton.titleLabel?.textColor = .black
+            colorMode.tintColor = .black
+            colorMode.thumbTintColor = .white
+            colors[0] = .black
+            ColorShift.backgroundColor = colors[currentColor]
+        }
+    }
+    
+    @IBAction func colorModeSwitch(_ sender: UISwitch) {
+        if colorMode.isOn {
+            darkMode = true
+            colorSwitch()
+        } else {
+            darkMode = false
+            colorSwitch()
+        }
     }
 }
 
