@@ -43,15 +43,15 @@ class ViewController: UIViewController {
         if darkMode == true {
             view.backgroundColor = .black
             buzzyButton.titleLabel?.textColor = .white
-            colorMode.tintColor = .white
-            colorMode.thumbTintColor = .black
+            colorMode.tintColor = .black
+            colorMode.thumbTintColor = .white
             colors[0] = .white
             ColorShift.backgroundColor = colors[currentColor]
         } else {
             view.backgroundColor = .white
             buzzyButton.titleLabel?.textColor = .black
-            colorMode.tintColor = .black
-            colorMode.thumbTintColor = .white
+            colorMode.tintColor = .white
+            colorMode.thumbTintColor = .black
             colors[0] = .black
             ColorShift.backgroundColor = colors[currentColor]
         }
