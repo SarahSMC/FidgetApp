@@ -15,6 +15,7 @@
 		9B38AAC32628A63700D3ED37 /* FidgetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AAC22628A63700D3ED37 /* FidgetAppTests.swift */; };
 		9B38AACE2628A63700D3ED37 /* FidgetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B38AACD2628A63700D3ED37 /* FidgetAppUITests.swift */; };
 		9B4BFF18264C3CF900D56B03 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BFF17264C3CF900D56B03 /* pop.mp3 */; };
+		9B7C489A2655754E00C5FC24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C48992655754E00C5FC24 /* HomeViewController.swift */; };
 		9BA400A3263C711400D58459 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA400A2263C711400D58459 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		9B38AACD2628A63700D3ED37 /* FidgetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidgetAppUITests.swift; sourceTree = "<group>"; };
 		9B38AACF2628A63700D3ED37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4BFF17264C3CF900D56B03 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
+		9B7C48992655754E00C5FC24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9BA400A2263C711400D58459 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				9B38AAAD2628A63500D3ED37 /* AppDelegate.swift */,
 				9B38AAAF2628A63500D3ED37 /* ViewController.swift */,
 				9B38AAB12628A63500D3ED37 /* Main.storyboard */,
+				9B7C48992655754E00C5FC24 /* HomeViewController.swift */,
 				9BA400A2263C711400D58459 /* SecondViewController.swift */,
 				9B38AAB42628A63700D3ED37 /* Assets.xcassets */,
 				9B38AAB62628A63700D3ED37 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				9BA400A3263C711400D58459 /* SecondViewController.swift in Sources */,
 				9B38AAB02628A63500D3ED37 /* ViewController.swift in Sources */,
 				9B38AAAE2628A63500D3ED37 /* AppDelegate.swift in Sources */,
+				9B7C489A2655754E00C5FC24 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
